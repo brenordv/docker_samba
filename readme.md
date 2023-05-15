@@ -51,6 +51,12 @@ sudo mount -a
 
 If there are any errors, the system will report them. Otherwise, the sda drive should be mounted to `/netStorage` automatically at boot time.
 
+## Allowing free access
+Ok, I'm setting like this because this storage won't hold anything really important AND it's in an hidden WiFi network.
+```shell
+sudo chmod -R 777 /netStorage/
+```
+
 # Creating Docker image.
 
 ```shell
