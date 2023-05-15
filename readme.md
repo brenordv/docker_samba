@@ -38,7 +38,7 @@ sudo nano /etc/fstab
 
 4. Add the following line to the end of the file, replacing UUID with the `UUID` of the sda drive that you obtained in step 2:
 ```shell
-UUID=<UUID> /netStorage ext4 defaults 0 2
+UUID=<UUID> /netStorage ext4 defaults 0 0
 ```
 This line tells the system to mount the sda drive with the specified UUID to `/netStorage` using the ext4 file system with default mount options at boot time.
 
